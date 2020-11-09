@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="318.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bytmasoft.sms.controller.TeacherController">
+   <children>
+      <Pane prefHeight="122.0" prefWidth="900.0" style="-fx-background-color: #2770E4;" AnchorPane.bottomAnchor="195.6" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="227.0" layoutY="34.0" text="Teachers" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="227.0" layoutY="72.0" text="School Management System" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="152.0" fitWidth="195.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                   <Image url="@../images/logo_4.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <MenuBar layoutX="150.0" layoutY="132.0" prefHeight="26.0" prefWidth="600.0" AnchorPane.bottomAnchor="159.6" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="132.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Teacher">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Add Teacher" />
+                  <MenuItem mnemonicParsing="false" text="Show Teachers" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="674.0" prefWidth="731.0" style="-fx-background-color: #EFEFEF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <AnchorPane prefHeight="209.0" prefWidth="731.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="97.0" fitWidth="424.0" layoutX="168.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="167.035400390625" AnchorPane.rightAnchor="150.964599609375">
+               <image>
+                  <Image url="@images/banner.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="66.0" prefWidth="94.0" text="DSS" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="623.0">
+               <font>
+                  <Font name="Arial Bold Italic" size="23.0" />
+               </font>
+            </Label>
+            <MenuBar layoutX="37.0" layoutY="156.0" prefHeight="39.0" prefWidth="674.0" stylesheets="@css/styles.css" AnchorPane.leftAnchor="37.0" AnchorPane.rightAnchor="20.0">
+              <menus>
+                <Menu mnemonicParsing="true" text="Student">
+                  <items>
+                    <MenuItem fx:id="itemAddStudent" mnemonicParsing="false" onAction="#handelMenuClicks" text="Add Student" />
+                        <MenuItem fx:id="itemShowStudents" mnemonicParsing="false" onAction="#handelMenuClicks" text="Show Students" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Teacher">
+                  <items>
+                    <MenuItem fx:id="itemAddTeacher" mnemonicParsing="false" onAction="#handelMenuClicks" text="Add Teacher" />
+                        <MenuItem fx:id="itemShowTeachers" mnemonicParsing="false" onAction="#handelMenuClicks" text="Show Teachers" />
+                  </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="Manager">
+                     <items>
+                        <MenuItem fx:id="itemAddManager" mnemonicParsing="false" onAction="#handelMenuClicks" text="Add Manager" />
+                        <MenuItem fx:id="itemShowManagers" mnemonicParsing="false" onAction="#handelMenuClicks" text="Show Managerss" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Class">
+                     <items>
+                        <MenuItem fx:id="itemAddClass" mnemonicParsing="false" onAction="#handelMenuClicks" text="Add Class" />
+                        <MenuItem fx:id="itemShowClasses" mnemonicParsing="false" onAction="#handelMenuClicks" text="Show Classes" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Exam">
+                     <items>
+                        <MenuItem fx:id="itemAddExam" mnemonicParsing="false" onAction="#handelMenuClicks" text="Add Exam" />
+                        <MenuItem fx:id="itemShowExams" mnemonicParsing="false" onAction="#handelMenuClicks" text="Show Exams" />
+                     </items>
+                  </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem fx:id="itemAboutus" mnemonicParsing="false" onAction="#handelMenuClicks" text=" About Us" />
+                  </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="Settings">
+                     <items>
+                        <MenuItem fx:id="itemLogout" mnemonicParsing="false" onAction="#handelMenuClicks" text="Logout" />
+                     </items>
+                  </Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <AnchorPane style="-fx-background-color: #434242;" BorderPane.alignment="CENTER">
+         <children>
+            <MenuButton layoutY="1.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="170.0" stylesheets="@css/styles.css" text="Newsletter" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="563.0">
+              <items>
+                <MenuItem fx:id="itemCurrentArticle" mnemonicParsing="false" onAction="#handelMenuClicks" text="Current Article" />
+                <MenuItem fx:id="itemCurrentNews" mnemonicParsing="false" onAction="#handelMenuClicks" text="Current News" />
+                  <MenuItem fx:id="itemCurrentConferance" mnemonicParsing="false" onAction="#handelMenuClicks" text="Current Conferance" />
+              </items>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </MenuButton>
+            <MenuButton layoutX="286.0" mnemonicParsing="false" prefWidth="170.0" stylesheets="@css/styles.css" text="Service" AnchorPane.leftAnchor="286.0" AnchorPane.rightAnchor="285.0">
+               <items>
+                  <MenuItem fx:id="itemJobs" mnemonicParsing="false" onAction="#handelMenuClicks" text="IT-Jobs" />
+                  <MenuItem fx:id="itemConferanceCalender" mnemonicParsing="false" onAction="#handelMenuClicks" text="Conferance Calender" />
+                  <MenuItem fx:id="itemSitemap" mnemonicParsing="false" onAction="#handelMenuClicks" text="Sitemap" />
+               </items>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </MenuButton>
+            <MenuButton layoutX="571.0" mnemonicParsing="false" prefWidth="170.0" stylesheets="@css/styles.css" text="Information" AnchorPane.leftAnchor="571.0" AnchorPane.rightAnchor="0.0">
+               <items>
+                  <MenuItem fx:id="itemImpressum" mnemonicParsing="false" onAction="#handelMenuClicks" text="Impressum" />
+                  <MenuItem fx:id="itemAboutUs" mnemonicParsing="false" onAction="#handelMenuClicks" text="About us" />
+                  <MenuItem fx:id="itemContactUs" mnemonicParsing="false" onAction="#handelMenuClicks" text="Contact" />
+               </items>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </MenuButton>
+         </children>
+      </AnchorPane>
+   </bottom>
+   <center>
+      <AnchorPane fx:id="bodyCenterId" prefHeight="480.0" prefWidth="731.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
