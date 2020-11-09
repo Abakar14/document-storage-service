@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="408.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bytmasoft.sms.controller.TimetableController">
+   <children>
+      <Pane prefHeight="122.0" prefWidth="900.0" style="-fx-background-color: #2770E4;" AnchorPane.bottomAnchor="285.6" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="227.0" layoutY="34.0" text="Timetable" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="227.0" layoutY="72.0" text="School Management System" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="152.0" fitWidth="195.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                   <Image url="@../images/logo_4.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <FlowPane layoutX="241.0" layoutY="148.0" prefHeight="230.0" prefWidth="251.0">
+         <children>
+            <DatePicker fx:id="terminDatePicker" />
+         </children>
+      </FlowPane>
+   </children>
+</AnchorPane>
