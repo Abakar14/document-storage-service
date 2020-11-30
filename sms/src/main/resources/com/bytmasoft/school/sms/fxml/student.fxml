@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="506.0" prefWidth="820.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bytmasoft.sms.controller.StudentController">
+   <children>
+      <BorderPane prefHeight="506.0" prefWidth="820.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <Pane prefHeight="123.0" prefWidth="833.0" style="-fx-background-color: #2770E4;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="227.0" layoutY="34.0" text="Students" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="227.0" layoutY="72.0" text="School Management System" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="152.0" fitWidth="195.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/logo_4.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </Pane>
+         </top>
+         <left>
+            <VBox prefHeight="383.0" prefWidth="130.0" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets right="5.0" />
+               </BorderPane.margin>
+               <children>
+                  <Pane prefHeight="382.0" prefWidth="138.0" style="-fx-background-color: #2770E4; -fx-background-radius: 0 30 30 0;">
+                     <children>
+                        <MenuButton fx:id="studentMenuButton" layoutX="3.0" layoutY="43.0" lineSpacing="5.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="123.0" text="Students">
+                          <items>
+                            <MenuItem fx:id="showStudentsMenuItem" mnemonicParsing="false" onAction="#showStudents" text="Show Student">
+                                 <graphic>
+                                    <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/icons/view_list_black_18dp.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic></MenuItem>
+                            <MenuItem fx:id="addStudentsMenuItem" mnemonicParsing="false" onAction="#addNewStudent" text="Add New Student">
+                                 <graphic>
+                                    <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/icons/person_add_black_18dp.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic></MenuItem>
+                          </items>
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" focusTraversable="true" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/icons/groups_black_18dp.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </MenuButton>
+                     </children></Pane>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <AnchorPane fx:id="rootContent" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #BBDEFB;" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </BorderPane.margin>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

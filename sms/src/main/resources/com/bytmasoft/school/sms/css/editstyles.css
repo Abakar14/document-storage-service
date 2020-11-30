@@ -1,0 +1,48 @@
+
+
+
+.button {
+	/**-fx-background-color: #3F2B63; **/
+	-fx-background-color: linear-gradient(#3F2B63, #2A5058);
+	-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+	-fx-border:none;
+	-fx-font-family:" Arial Narrow";
+	
+	-fx-padding:20.0px;
+	-fx-text-alignment:center;
+	-fx-content-display:center;
+	-fx-text-fill:white;
+	-fx-font-size: 20.0px;
+}
+
+.button:hover {
+	-fx-background-color: #2A1C42;
+}
+
+.button:pressed {
+	-fx-background-color: #7156DD;
+}
+
+.text-field {
+	-fx-alignment: center;
+}
+
+.label {
+	-fx-text-alignment: center;
+	-fx-content-display:center;
+	-fx-font-family: arial;
+	-fx-font-size: 20.0px;
+	
+}
+
+.check-box {
+	-fx-font-weight: bold;
+}
+
+.choice-box {
+	
+}
+
+.combo-box {
+	
+}
