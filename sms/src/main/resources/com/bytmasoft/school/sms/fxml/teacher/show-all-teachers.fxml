@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="460.0" prefWidth="854.0" stylesheets="@../../css/teacher.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bytmasoft.sms.student.controller.ShowAllTeachersController">
+   <children>
+      <JFXTextField fx:id="filterField" labelFloat="true" layoutX="43.0" layoutY="28.0" prefHeight="30.0" prefWidth="135.0" promptText="Search text" />
+      <ImageView fitHeight="29.0" fitWidth="75.0" layoutX="176.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/icons/search_black_18dp.png" />
+         </image>
+      </ImageView>
+      <ScrollPane layoutX="20.0" layoutY="74.0" prefHeight="294.0" prefWidth="826.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="70.0">
+         <content>
+            <TableView fx:id="teachersTableview" prefHeight="277.0" prefWidth="779.0" stylesheets="@../../css/table.css">
+              <columns>
+              <TableColumn fx:id="idCol" prefWidth="75.0" text="ID" />
+						<TableColumn fx:id="firstnameCol" prefWidth="75.0" text="First Name" />
+						<TableColumn fx:id="lastnameCol" prefWidth="75.0" text="Last Name" />
+						<TableColumn fx:id="emailCol" prefWidth="75.0" text="E-mail" />
+						<TableColumn fx:id="birthdayCol" prefWidth="103.0" text="Birthday" />
+						<TableColumn fx:id="ageCol" prefWidth="60.0" text="Age" />
+						<TableColumn fx:id="cityCol" prefWidth="64.0" text="City" />
+						<TableColumn fx:id="streetCol" prefWidth="75.0" text="Street" />
+				</columns>
+            </TableView>
+         </content>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </ScrollPane>
+      <JFXButton fx:id="showTeacherDetailsButton" layoutX="245.0" layoutY="394.0" onAction="#showTeacherDetails" prefHeight="40.0" prefWidth="180.0" text="Show Student Details" />
+      <JFXButton fx:id="deleteTeacherButton" layoutX="436.0" layoutY="394.0" onAction="#deleteTeacher" prefHeight="40.0" prefWidth="160.0" text="Delete Student" />
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</AnchorPane>
