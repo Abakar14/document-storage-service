@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="addStudentAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="616.0" prefWidth="775.0" stylesheets="@../../css/students.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bytmasoft.sms.student.controller.AddStudentController">
+     <children>
+      <TitledPane fx:id="editStudentPane" animated="false" collapsible="false" layoutX="5.0" layoutY="46.0" prefHeight="284.0" prefWidth="770.0" text="Student Data">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="245.0" prefWidth="758.0">
+               <children>
+                  <JFXTextField fx:id="firstNameFieldText" alignment="CENTER" focusColor="#3668ff" labelFloat="true" layoutX="10.0" layoutY="15.0" prefHeight="30.0" prefWidth="160.0" promptText="First Name" unFocusColor="#66bf12">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="lastNameFieldText" alignment="CENTER" focusColor="#3668ff" labelFloat="true" layoutX="184.0" layoutY="15.0" prefHeight="30.0" prefWidth="160.0" promptText="Last Name" unFocusColor="#66bf12">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="passwordTextField" alignment="CENTER" focusColor="#3668ff" labelFloat="true" layoutX="355.0" layoutY="15.0" prefHeight="30.0" prefWidth="160.0" promptText="Password" unFocusColor="#66bf12">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </JFXTextField>
+                  <ImageView fx:id="profilePictureImageView" fitHeight="129.0" fitWidth="163.0" layoutX="556.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true" />
+                  <JFXTextField fx:id="emailFieldText" alignment="CENTER" focusColor="#3668ff" labelFloat="true" layoutX="10.0" layoutY="85.0" prefHeight="30.0" prefWidth="160.0" promptText="E-Mail" unFocusColor="#66bf12">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="telefonTextField" alignment="CENTER" focusColor="#3668ff" labelFloat="true" layoutX="184.0" layoutY="85.0" prefHeight="30.0" prefWidth="160.0" promptText="Telefon" unFocusColor="#66bf12">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="statusTextField" alignment="CENTER" labelFloat="true" layoutX="355.0" layoutY="85.0" prefHeight="30.0" prefWidth="160.0" promptText="Status" unFocusColor="#66bf12" />
+                  <JFXTextField fx:id="registerdOnTextField" alignment="CENTER" labelFloat="true" layoutX="10.0" layoutY="154.0" prefHeight="30.0" prefWidth="160.0" promptText="Registerd on" unFocusColor="#66bf12" />
+                  <JFXTextField fx:id="lastLoginTextField" alignment="CENTER" labelFloat="true" layoutX="184.0" layoutY="154.0" prefHeight="30.0" prefWidth="160.0" promptText="Last Login" unFocusColor="#66bf12" />
+                  <JFXDatePicker fx:id="birthdayDatePicker" defaultColor="#66bf12" layoutX="355.0" layoutY="153.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="30.0" prefWidth="160.0" promptText="Birthday">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets></JFXDatePicker>
+                  <JFXToggleButton fx:id="maleToggleButton" layoutX="532.0" layoutY="5.0" prefHeight="16.0" prefWidth="100.0" text="Male" />
+                  <JFXToggleButton fx:id="femaleToggleButton" layoutX="625.0" layoutY="5.0" prefHeight="58.0" prefWidth="110.0" text="Female" />
+                  <JFXButton fx:id="uploadProfilePictureButton" layoutX="456.0" layoutY="197.0" onAction="#uploadImage" prefHeight="36.0" prefWidth="142.0" text="Upload Picture" wrapText="true">
+                     <graphic>
+                        <ImageView fitHeight="26.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/icons/dd_photo_alternate_black_18dp.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></JFXButton>
+                  <JFXButton fx:id="capturePictureButton" layoutX="606.0" layoutY="197.0" onAction="#captureImage" prefHeight="36.0" prefWidth="145.0" text="Capture Picture" wrapText="true">
+                     <graphic>
+                        <ImageView fitHeight="26.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/icons/dd_photo_alternate_black_18dp.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+               <effect>
+                  <SepiaTone />
+               </effect>
+            </AnchorPane>
+        </content>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </TitledPane>
+      <TitledPane fx:id="editAddressPane" animated="false" collapsible="false" layoutX="5.0" layoutY="328.0" prefHeight="222.0" prefWidth="385.0" text="Address">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="171.0" prefWidth="338.0">
+               <children>
+                  <JFXTextField fx:id="cityTextField" alignment="CENTER" labelFloat="true" layoutX="10.0" layoutY="15.0" prefHeight="30.0" prefWidth="160.0" promptText="City">
+                     <effect>
+                        <SepiaTone />
+                     </effect>
+                  </JFXTextField>
+                  <JFXTextField fx:id="zipcodeTextField" alignment="CENTER" labelFloat="true" layoutX="175.0" layoutY="15.0" prefHeight="30.0" prefWidth="160.0" promptText="Zipcode">
+                     <effect>
+                        <SepiaTone />
+                     </effect>
+                  </JFXTextField>
+                  <JFXTextField fx:id="streetTextField" alignment="CENTER" labelFloat="true" layoutX="10.0" layoutY="90.0" prefHeight="30.0" prefWidth="160.0" promptText="Street">
+                     <effect>
+                        <SepiaTone />
+                     </effect>
+                  </JFXTextField>
+                  <JFXTextField fx:id="hauseNrTextField" alignment="CENTER" labelFloat="true" layoutX="175.0" layoutY="90.0" prefHeight="30.0" prefWidth="160.0" promptText="Haus Nr">
+                     <effect>
+                        <SepiaTone />
+                     </effect>
+                  </JFXTextField>
+               </children>
+            </AnchorPane>
+        </content>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </TitledPane>
+      <TitledPane fx:id="editContactPersonPane" animated="false" collapsible="false" layoutX="390.0" layoutY="328.0" prefHeight="222.0" prefWidth="385.0" text="Contact Person">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="186.0" prefWidth="405.0">
+               <children>
+                  <JFXTextField fx:id="contactPersonfirstNameTextField" alignment="CENTER" labelFloat="true" layoutX="10.0" layoutY="15.0" promptText="First Name" />
+                  <JFXTextField fx:id="contactPersonLastNameTextField" alignment="CENTER" labelFloat="true" layoutX="172.0" layoutY="15.0" promptText="Last Name" />
+                  <JFXTextField fx:id="contactPersonTelefonTextField" alignment="CENTER" labelFloat="true" layoutX="10.0" layoutY="75.0" promptText="Telefon" />
+                  <JFXTextField fx:id="contactPersonEmailTextField" alignment="CENTER" labelFloat="true" layoutX="10.0" layoutY="135.0" promptText="E-Mail" />
+                  <JFXToggleButton fx:id="contactPersonMaleToggleButton" layoutX="169.0" layoutY="60.0" prefHeight="40.0" prefWidth="100.0" text="Male" />
+                  <JFXToggleButton fx:id="contactPersonFemaleToggleButton" layoutX="256.0" layoutY="60.0" prefHeight="39.0" prefWidth="110.0" text="Female" />
+               </children>
+            </AnchorPane>
+        </content>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </TitledPane>
+      <JFXButton fx:id="cancelButton" layoutX="166.0" layoutY="555.0" onAction="#cancel" prefHeight="30.0" prefWidth="110.0" text="Cancel" wrapText="true">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/icons/cancel_black_18dp.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <JFXButton fx:id="saveButton" layoutX="453.0" layoutY="555.0" onAction="#Save" prefHeight="30.0" prefWidth="110.0" text="Save">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/icons/save_black_18dp.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <JFXButton fx:id="backToMainContent" layoutX="10.0" layoutY="4.0" onAction="#goBackToMainContent" prefHeight="35.0" prefWidth="166.0" text="Show All Students" wrapText="true">
+         <graphic>
+            <ImageView fitHeight="29.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/icons/kip_previous_black_18dp.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+   <opaqueInsets>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </opaqueInsets>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</AnchorPane>
